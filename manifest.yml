@@ -1,0 +1,13 @@
+applications:
+- path: .
+  memory: 512M
+  instances: 1
+  domain: mybluemix.net
+  name: watsonbot
+  host: watsonbot-dkudinov
+  disk_quota: 1024M
+  services:
+  - watsonbot-cloudantNoSQLDB
+  - availability-monitoring-auto
+  - Weather Company Data-r0
+  - Visual Recognition-r6
